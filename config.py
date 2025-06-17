@@ -18,8 +18,8 @@ class Config:
         API_ID = 0
         API_HASH = ""
     
-    BOT_TOKEN = environ.get("BOT_TOKEN", "7512154282:AAFGm5R7s_9iCDRmlj5VrFSkJheimWV-rZM")
-    BOT_USERNAME = environ.get("BOT_USERNAME", "Tesfyrdcboybot")
+    BOT_TOKEN = environ.get("BOT_TOKEN", "7540338860:AAF7xysL_W9Mn27sQwsXyIUV8q0RwTfu_Qs")
+    BOT_USERNAME = environ.get("BOT_USERNAME", "Mikotsbot")
     
     # Admin Configuration
     ADMIN = list(map(int, environ.get("ADMIN", "7970350353").split()))
@@ -31,7 +31,7 @@ class Config:
     
     # Channels Configuration
     FORCE_SUB_CHANNELS = environ.get("FORCE_SUB_CHANNELS", "").split(",") if environ.get("FORCE_SUB_CHANNELS") else []
-    LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "0")) if environ.get("LOG_CHANNEL") else None
+    LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002669902570")) if environ.get("LOG_CHANNEL", "-1002669902570") else None
     
     # Media Configuration
     START_PIC = environ.get("START_PIC", "https://graph.org/file/a27d85469761da836337c.jpg")
